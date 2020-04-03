@@ -9,18 +9,18 @@ def start_message(message):
     bot.send_message(message.chat.id, 'Бажаю усім 200 балів на ЗНО)')
 @bot.message_handler(commands=['help'])
 def send_help_message(message):
-	bot.send_message(message.chat.id, 'Командою "/questiоn" ви можете попросиди допомоги з якоюсь задачею');
+	bot.send_message(message.chat.id, 'Командою "/questiоn" ви можете попросити допомоги з якоюсь задачею');
 	bot.send_message(message.chat.id, 'Командою "/repоrt" ви можете повідомити про порушення, один з адмінів прийде на допомогу');
 
 @bot.message_handler(commands=['report'])
 def report_message(message):
-	bot.reply_to(message, '@mataner @andead422 @dimaborak @Gazelka @nporMaTar @melkii_pumba');
+	bot.reply_to(message, '@mataner @andead422 @dimaborak @Gazelka @nporMaTeP @melkii_pumba');
 	if (message.chat.type == 'supergroup'):
 		bot.send_message(message.chat.id, 'Розбійник в @matan_help');
 
 @bot.message_handler(commands=['question'])
 def question_message(message):
-	bot.reply_to(message, '@mataner @andead422 @dimaborak @Gazelka @nporMaTar @melkii_pumba');
+	bot.reply_to(message, '@mataner @andead422 @dimaborak @Gazelka @nporMaTeP @melkii_pumba');
 	if (message.chat.type == 'supergroup'):
 		bot.send_message(message.chat.id, 'Є питання в @matan_help');
 
